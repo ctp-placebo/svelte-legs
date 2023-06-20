@@ -1,0 +1,58 @@
+/* CSS HEX */
+:root {
+--snow: #FFFAFA;
+--snow-rgba: rgba(255, 250, 250, 1);
+--ivory: #FFFFF0;
+--ivory-rgba: rgba(255, 255, 240, 1);
+
+--carnation-pink: #ff99c9ff;
+--periwinkle: #c1bddbff;
+--powder-blue: #a2c7e5ff;
+--fluorescent-cyan: #58fcecff;
+--black-olive: #303a2bff;
+
+/* CSS HSL */
+--carnation-pink-h-1: hsla(332, 100%, 80%, 1);
+--periwinkle-h-1: hsla(248, 29%, 80%, 1);
+--powder-blue-h-1: hsla(207, 56%, 77%, 1);
+--fluorescent-cyan-h-1: hsla(174, 96%, 67%, 1);
+--black-olive-h-1: hsla(100, 15%, 20%, 1);
+
+--carnation-pink-h-3: hsla(332, 100%, 80%, 0.3);
+--periwinkle-h-3: hsla(248, 29%, 80%, 0.3);
+--powder-blue-h-3: hsla(207, 56%, 77%, 0.3);
+--fluorescent-cyan-h-3: hsla(174, 96%, 67%, 0.3);
+--black-olive-h-3: hsla(100, 15%, 20%, 0.3);
+
+/* other one*/
+--electric-blue: #1be7ffff;
+--light-green: #6eeb83ff;
+--lemon-lime: #e4ff1aff;
+--harvest-gold: #e8aa14ff;
+--giants-orange: #ff5714ff;
+
+/* CSS HSL */
+--electric-blue: hsla(186, 100%, 55%, 1);
+--light-green: hsla(130, 76%, 68%, 1);
+--lemon-lime: hsla(67, 100%, 55%, 1);
+--harvest-gold: hsla(42, 84%, 49%, 1);
+--giants-orange: hsla(17, 100%, 54%, 1);
+
+}
+
+/* icons prefix */
+.mi {
+    font-size: 1.4rem;
+}
+/* Use this to make sure screen readers read something sensible 
+   when encountering the mi. If you are using the icons 
+   decoratively, you can omit the <span>
+*/
+.u-sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}

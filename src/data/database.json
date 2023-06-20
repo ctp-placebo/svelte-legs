@@ -1,0 +1,124 @@
+[
+     {
+            "id": 1,
+            "name": "ku",
+            "namePlural": "kuer",
+            "numberLegs": 4,
+            "voice": "pathToAudio",
+            "voiceText": "moo",
+            "signImg": "./../signImages/cow.svg",
+            "additionalImage": "pathToImgFile.png",
+            "latinName": "bovine"
+        },
+        {
+            "id": 2,
+            "name": "syklist",
+            "namePlural": "syklister",
+            "numberLegs": 2,
+            "voice": "pathToAudio.wav",
+            "voiceText": "human",
+            "signImg": "./../signImages/cyclist.svg",
+            "additionalImage": "pathToImgFile.png",
+            "latinName": "homo sapiens"
+        },
+        {
+            "id": 3,
+            "name": "elg",
+            "namePlural": "elger",
+            "numberLegs": 4,
+            "voice": "pathToAudio.wav",
+            "voiceText": "nieegh",
+            "signImg": "./../signImages/elk.svg",
+            "additionalImage": "pathToImgFile.png",
+            "latinName": "equine"
+        },
+        {
+            "id": 4,
+            "name": "hest",
+            "namePlural": "hester",
+            "numberLegs": 6,
+            "voice": "pathToAudio",
+            "voiceText": "neigh",
+            "signImg": "./../signImages/horse.svg",
+            "additionalImage": "pathToImgFile.png",
+            "latinName": "equine"
+        },
+        {
+            "id": 5,
+            "name": "gang vei",
+            "namePlural": "gang vei",
+            "numberLegs": 2,
+            "voice": "pathToAudio",
+            "voiceText": "hello",
+            "signImg": "./../signImages/pedestrian_crossing.svg",
+            "additionalImage": "pathToImgFile.png",
+            "latinName": "homo sapiens"
+        },
+        {
+            "id": 6,
+            "name": "mennesker",
+            "namePlural": "mennesker",
+            "numberLegs": 4,
+            "voice": "pathToAudio",
+            "voiceText": "hei",
+            "signImg": "./../signImages/people_2.svg",
+            "additionalImage": "pathToImgFile.png",
+            "latinName": "ovine"
+        },
+        {
+            "id": 7,
+            "name": "hjort",
+            "namePlural": "hjorter",
+            "numberLegs": 4,
+            "voice": "pathToAudio",
+            "voiceText": "oaoaoao",
+            "signImg": "./../signImages/prancing_deer.svg",
+            "additionalImage": "pathToImgFile.png",
+            "latinName": ""
+        },
+        {
+            "id": 8,
+            "name": "sau og lam",
+            "namePlural": "sauer med lam",
+            "numberLegs": 8,
+            "voice": "pathToAudio",
+            "voiceText": "baa",
+            "signImg": "./../signImages/sheep_and_lamb.svg",
+            "additionalImage": "pathToImgFile.png",
+            "latinName": "ovine"
+        },
+        {
+            "id": 9,
+            "name": "skiier",
+            "namePlural": "skiier",
+            "numberLegs": 2,
+            "voice": "pathToAudio.wav",
+            "voiceText": "human",
+            "signImg": "./../signImages/skiing.svg",
+            "additionalImage": "pathToImgFile.png",
+            "latinName": "pseudo homo sapiens"
+        },
+        {
+            "id": 10,
+            "name": "reinsdyr",
+            "namePlural": "reinsdyr",
+            "numberLegs": 4,
+            "voice": "pathToAudio",
+            "voiceText": "Stop shooting at me!",
+            "signImg": "./../signImages/red_deer.svg",
+            "additionalImage": "pathToImgFile.png",
+            "latinName": ""
+        },
+        {
+            "id": 11,
+            "name": "vei arbeid",
+            "namePlural": "veiarbeider",
+            "numberLegs": 2,
+            "voice": "pathToAudio",
+            "voiceText": "Drive with care",
+            "signImg": "./../signImages/roadworks.svg",
+            "additionalImage": "pathToImgFile.png",
+            "latinName": ""
+        }
+]
+
