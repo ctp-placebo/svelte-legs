@@ -2,15 +2,20 @@
     import data from '../data/database.json';
     import SignList from '../components/SignList.svelte';
     const jsonData = [...data];
+    import { totalCount } from '../stores/countStore';
 
     /**
 	* @type {number}
 	*/
-    let total = 0;
     
+    let totalCountVal;
+    totalCount.subscribe(value => {
+        console.log('value', value);
+        totalCountVal = value;
+    });
 
     console.log('jsondata: ', jsonData);
-    $: {total = SignList.totalLegs};
+    
 
 // Collects together sign components:
 // signs imports < SignList imports < SignItem imports < plusMinusBtns
@@ -19,11 +24,11 @@
 <article>
     <div class="section-wrapper">
         <section class="total-legs">
-            <span>{total}</span>
+            <span>{totalCountVal}</span>
         </section>
     </div>
     <section class="signlist-wrapper">
-        <SignList signData={jsonData} bind:totalLegs />
+        <SignList signData={jsonData} />
     </section>    
     
 </article>

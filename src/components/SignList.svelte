@@ -1,30 +1,22 @@
 <script>
-	import { onMount } from 'svelte';
 	import data from '../data/database.json';
 	import Card from './UI/Card.svelte';
 	import SignItem from './SignItem.svelte';
+	import { totalCount } from '../stores/countStore';
 
 	export let signData = [...data];
-	/**
-	 * @type {any}
-	 */
-	// export let signData;
 	
-	onMount(() => {
-		if (signData.length === 0) {
-			totalLegs = 0;
-		}
-	});
-	
-	export let totalLegs = 0;
-
 	const handleAddLegs = (/** @type {number} */ numberLegs) => {
-		totalLegs += numberLegs;
+		totalCount.update(n => n + numberLegs);
+		console.log("handleAdd", totalCount);
 	};
 	const handleSubtractLegs = (/** @type {number} */ numberLegs) => {
-		if (totalLegs > 0) {
-			totalLegs -= numberLegs;
-		}
+		totalCount.subscribe(value => {
+			if (value >= 0 ) {
+				totalCount.update(n => n - numberLegs);
+			}
+			console.log("decrease totalCount", totalCount);
+		});
 	};
 
 </script>
@@ -38,8 +30,8 @@
 				numberLegs={sign.numberLegs}
 				namePlural={sign.namePlural}
 				counter={0}
-				on:clickAdd={() => handleAddLegs(sign.numberLegs)}
-				on:clickSubtract={() => handleSubtractLegs(sign.numberLegs)}
+				increase={() => handleAddLegs(sign.numberLegs)}
+				decrease={() => handleSubtractLegs(sign.numberLegs)}
 			/>
 		</Card>
 	{/each}
