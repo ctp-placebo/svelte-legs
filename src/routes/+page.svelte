@@ -9,13 +9,13 @@
 	*/
     
     let totalCountVal;
+    // IDK
     totalCount.subscribe(value => {
-        console.log('value', value);
+        if (value === 0) {
+            totalCount.set(0);
+        }
         totalCountVal = value;
     });
-
-    console.log('jsondata: ', jsonData);
-    
 
 // Collects together sign components:
 // signs imports < SignList imports < SignItem imports < plusMinusBtns
@@ -56,13 +56,16 @@
         height:8rem;
         background-image: linear-gradient(0.5turn, var(--ivory), var(--lemon-lime), var(--harvest-gold));
         border-radius: 50%;
-        text-align: center;
-        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
     }
     .total-legs > span {
-        font-size: 6rem;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 3rem;
         color: var(--giants-orange);
+        font-family: fantasy;
+        text-shadow: 2px 1px 3px aliceblue;
     }
     .signlist-wrapper {
         font-size: 1em;  

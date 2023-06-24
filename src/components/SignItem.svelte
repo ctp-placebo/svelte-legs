@@ -18,18 +18,28 @@
 	*/
     export let namePlural;
     /**
-	 * @type {string}
-	 */
-     export let imgPath;
+    * @type {string}
+    */
+    export let imgPath;
 
-     export let increase = () => {
+    export let increase = () => {
         counter += 1;
-     };
-     export let decrease = () => {
+        moreLegs();
+    };
+    export let decrease = () => {
         if (counter > 0) {
             counter -= 1;
+            lessLegs();
         }
      };
+    /**
+	* @type {() => void}
+	*/
+    export let lessLegs;
+    /**
+	* @type {() => void}
+	*/
+    export let moreLegs;
 </script>
 
 <div class="sign-item">

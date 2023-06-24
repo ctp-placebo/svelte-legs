@@ -10,7 +10,6 @@
      export let onSubtract;
 </script>
 
-
 <div class="plus-minus-btns">
     <button class="more-or-less minus" on:click={onSubtract}>
         <i class="mi mi-circle-remove"><span class="u-sr-only">Fjern en</span></i>
@@ -36,6 +35,7 @@
     .plus i {
         font-size: 2.75rem;
         color: var(--light-green);
+        text-shadow: 0px 2px 1px green;
     }
     .minus i {
         font-size: 1.5rem;

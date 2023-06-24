@@ -7,16 +7,10 @@
 	export let signData = [...data];
 	
 	const handleAddLegs = (/** @type {number} */ numberLegs) => {
-		totalCount.update(n => n + numberLegs);
-		console.log("handleAdd", totalCount);
+			totalCount.update(n => n + numberLegs);
 	};
 	const handleSubtractLegs = (/** @type {number} */ numberLegs) => {
-		totalCount.subscribe(value => {
-			if (value >= 0 ) {
-				totalCount.update(n => n - numberLegs);
-			}
-			console.log("decrease totalCount", totalCount);
-		});
+		totalCount.update(n => n - numberLegs);
 	};
 
 </script>
@@ -30,8 +24,8 @@
 				numberLegs={sign.numberLegs}
 				namePlural={sign.namePlural}
 				counter={0}
-				increase={() => handleAddLegs(sign.numberLegs)}
-				decrease={() => handleSubtractLegs(sign.numberLegs)}
+				lessLegs={() => handleSubtractLegs(sign.numberLegs)}
+				moreLegs={() => handleAddLegs(sign.numberLegs)}
 			/>
 		</Card>
 	{/each}
