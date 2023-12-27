@@ -1,15 +1,14 @@
 <script>
     import data from '../data/database.json';
     import SignList from '../components/SignList.svelte';
-    const jsonData = [...data];
     import { totalCount } from '../stores/countStore';
-
+    
+    const jsonData = [...data];
     /**
 	* @type {number}
 	*/
     
     let totalCountVal;
-    // IDK
     totalCount.subscribe(value => {
         if (value === 0) {
             totalCount.set(0);
