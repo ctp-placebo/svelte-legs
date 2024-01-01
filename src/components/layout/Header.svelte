@@ -1,4 +1,23 @@
+<script>
+	import { onMount } from "svelte";
+    import { themeChange } from 'theme-change'
+    import tailwindConfig from '../../../tailwind.config.cjs';
+
+    let themes = Object.keys(tailwindConfig.daisyui.themes);
+    console.log(themes);
+
+    onMount(() => {
+        themeChange(false);
+    });
+</script>
+
 <div class="header">
+    <select data-choose-theme>
+        <option value="">Default</option>
+        {#each themes as theme}
+            <option value={theme}>{theme}</option>
+        {/each}
+    </select>
     <h1>Telle bene mine!</h1>
     <p class="logo">__🐄_</p>
 </div>

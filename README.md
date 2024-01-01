@@ -16,13 +16,23 @@ npm create svelte@latest my-app
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```pnpm
 
-```bash
-npm run dev
+See package.json for all scripts.  
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+This project uses *p*npm  
+
+# install all pkgs to node_modules
+pnpm install 
+
+# Run in dev server 
+pnpm start 
+
+# add a developer package
+pnpm add -D [package name]  
+
+# More info here https://pnpm.io/cli/add  
+
 ```
 
 ## Building
