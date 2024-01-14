@@ -1,5 +1,4 @@
 <script>
-
     /**
 	 * @type {any}
 	 */
@@ -8,15 +7,25 @@
 	 * @type {any}
 	 */
      export let onSubtract;
+
 </script>
 
 <div class="plus-minus-btns">
-    <button class="more-or-less minus" on:click={onSubtract}>
-        <i class="mi mi-circle-remove"><span class="u-sr-only">Fjern en</span></i>
+    <button 
+        class="btn btn-circle"
+        on:click={onSubtract}
+    >
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" /></svg>
+       
     </button>
-    <button class="more-or-less plus" on:click={onAdd}>
-        <i class="mi mi-circle-add"><span class="u-sr-only">Legg til</span></i>
+    <button 
+        class="btn btn-circle"
+        on:click={onAdd}
+        >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="transform: rotate(90deg);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 12h12M12 6v12" /></svg>
     </button>
+
 </div>
 
 <style>
@@ -24,21 +33,10 @@
         display: flex;
         flex-direction: row;
         align-content: center;
+        max-height: 2.75rem;
     }
-    .plus, .minus {
-        text-align: center;
-        vertical-align: baseline;
-        background-color: transparent;
-        border: none;
-        
+    button {
+        margin: 0 0.25rem;
     }
-    .plus i {
-        font-size: 2.75rem;
-        color: var(--light-green);
-        text-shadow: 0px 2px 1px green;
-    }
-    .minus i {
-        font-size: 1.5rem;
-        color: var(--powder-blue);
-    }
+
 </style>

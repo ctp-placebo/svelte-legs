@@ -44,15 +44,15 @@
 
 <div class="sign-item">
     <img class="sign-img" alt="" src="{imgPath}" />
-    <h1 class="name">{name}</h1>
-    <h2 class="nr-legs">{numberLegs}</h2>
+    <h1 class="name text-primary-content">{name}</h1>
+    <h2 class="nr-legs text-primary-content">+{numberLegs}</h2>
 
     <AddSubtractSingleSign 
         onAdd={increase} 
         onSubtract={decrease}
     />
 
-    <div class="sign-counter">
+    <div class="sign-counter text-primary-content">
         {counter} {counter == 1 ? name : namePlural }  
    </div>
 </div>
@@ -69,23 +69,28 @@
         width: 6rem;
     }
     .name {
-        color: var(--giants-orange);
+        /* color: var(--giants-orange); */
         margin-bottom: 0;
     }
     .nr-legs { 
-        color: var(--giants-orange);
-        background-color: var(--lemon-lime);
-        border-radius: 2rem;
-        width: 4rem;
+        /* color: var(--giants-orange); */
+        /* color: oklch(var(--n)); */
+        /* background-color: var(--lemon-lime); */
+        /* background-color: oklch(var(--n)); */
+        /* border-radius: 2rem; */
+        width: 100%;
+        
     }
     .sign-counter {
         font-size: 1rem;
-        color: var(--giants-orange);
-        background-color: var(--carnation-pink-h-3);
-        border-radius: 3rem;
+        /* color: var(--giants-orange); */
+        /* color: oklch(var(--n)); */
+        /* background-color: var(--carnation-pink-h-3); */
+        /* border-radius: 3rem; */
         margin-top: 1rem;
-        padding: 0.2rem;
-        width: 100%;
+        /* padding: 0.2rem;
+        width: 100%; */
+        width: inherit;
     }
 
 </style>
