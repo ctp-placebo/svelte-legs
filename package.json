@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"preinstall": "npx only-allow-npm",
+		
 		"dev": "vite dev",
 		"start": "npm run dev -- --open",
 		"build": "vite build",
@@ -19,6 +19,7 @@
 		"@playwright/test": "^1.40.1",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.5.0",
+		"@tailwindcss/typography": "^0.5.10",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
 		"autoprefixer": "^10.4.16",

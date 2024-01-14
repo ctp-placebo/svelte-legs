@@ -1,3 +1,4 @@
+import twtypeography from '@tailwindcss/typography';
 import * as dui from 'daisyui';
 
 export default {
@@ -5,7 +6,7 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [dui],
+  plugins: [twtypeography, dui],
   daisyui: {
     themes: [
       "light",

@@ -4,72 +4,77 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  theme-change:
-    specifier: ^2.5.0
-    version: 2.5.0
+importers:
 
-devDependencies:
-  '@playwright/test':
-    specifier: ^1.40.1
-    version: 1.40.1
-  '@sveltejs/adapter-auto':
-    specifier: ^2.0.0
-    version: 2.1.1(@sveltejs/kit@1.30.3)
-  '@sveltejs/kit':
-    specifier: ^1.5.0
-    version: 1.30.3(svelte@3.59.2)(vite@4.5.1)
-  '@typescript-eslint/eslint-plugin':
-    specifier: ^5.45.0
-    version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.56.0)(typescript@4.9.5)
-  '@typescript-eslint/parser':
-    specifier: ^5.45.0
-    version: 5.62.0(eslint@8.56.0)(typescript@4.9.5)
-  autoprefixer:
-    specifier: ^10.4.16
-    version: 10.4.16(postcss@8.4.32)
-  daisyui:
-    specifier: ^4.4.24
-    version: 4.4.24(postcss@8.4.32)
-  eslint:
-    specifier: ^8.28.0
-    version: 8.56.0
-  eslint-config-prettier:
-    specifier: ^8.5.0
-    version: 8.10.0(eslint@8.56.0)
-  eslint-plugin-svelte3:
-    specifier: ^4.0.0
-    version: 4.0.0(eslint@8.56.0)(svelte@3.59.2)
-  postcss:
-    specifier: ^8.4.32
-    version: 8.4.32
-  prettier:
-    specifier: ^2.8.0
-    version: 2.8.8
-  prettier-plugin-svelte:
-    specifier: ^2.8.1
-    version: 2.10.1(prettier@2.8.8)(svelte@3.59.2)
-  svelte:
-    specifier: ^3.54.0
-    version: 3.59.2
-  svelte-check:
-    specifier: ^3.0.1
-    version: 3.6.2(postcss@8.4.32)(svelte@3.59.2)
-  tailwindcss:
-    specifier: ^3.4.0
-    version: 3.4.0
-  tslib:
-    specifier: ^2.4.1
-    version: 2.6.2
-  typescript:
-    specifier: ^4.9.3
-    version: 4.9.5
-  vite:
-    specifier: ^4.0.0
-    version: 4.5.1(@types/node@20.10.5)
-  vitest:
-    specifier: ^0.25.3
-    version: 0.25.8
+  .:
+    dependencies:
+      theme-change:
+        specifier: ^2.5.0
+        version: 2.5.0
+    devDependencies:
+      '@playwright/test':
+        specifier: ^1.40.1
+        version: 1.40.1
+      '@sveltejs/adapter-auto':
+        specifier: ^2.0.0
+        version: 2.1.1(@sveltejs/kit@1.30.3)
+      '@sveltejs/kit':
+        specifier: ^1.5.0
+        version: 1.30.3(svelte@3.59.2)(vite@4.5.1)
+      '@tailwindcss/typography':
+        specifier: ^0.5.10
+        version: 0.5.10(tailwindcss@3.4.0)
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^5.45.0
+        version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.56.0)(typescript@4.9.5)
+      '@typescript-eslint/parser':
+        specifier: ^5.45.0
+        version: 5.62.0(eslint@8.56.0)(typescript@4.9.5)
+      autoprefixer:
+        specifier: ^10.4.16
+        version: 10.4.16(postcss@8.4.32)
+      daisyui:
+        specifier: ^4.4.24
+        version: 4.4.24(postcss@8.4.32)
+      eslint:
+        specifier: ^8.28.0
+        version: 8.56.0
+      eslint-config-prettier:
+        specifier: ^8.5.0
+        version: 8.10.0(eslint@8.56.0)
+      eslint-plugin-svelte3:
+        specifier: ^4.0.0
+        version: 4.0.0(eslint@8.56.0)(svelte@3.59.2)
+      postcss:
+        specifier: ^8.4.32
+        version: 8.4.32
+      prettier:
+        specifier: ^2.8.0
+        version: 2.8.8
+      prettier-plugin-svelte:
+        specifier: ^2.8.1
+        version: 2.10.1(prettier@2.8.8)(svelte@3.59.2)
+      svelte:
+        specifier: ^3.54.0
+        version: 3.59.2
+      svelte-check:
+        specifier: ^3.0.1
+        version: 3.6.2(postcss@8.4.32)(svelte@3.59.2)
+      tailwindcss:
+        specifier: ^3.4.0
+        version: 3.4.0
+      tslib:
+        specifier: ^2.4.1
+        version: 2.6.2
+      typescript:
+        specifier: ^4.9.3
+        version: 4.9.5
+      vite:
+        specifier: ^4.0.0
+        version: 4.5.1(@types/node@20.10.5)
+      vitest:
+        specifier: ^0.25.3
+        version: 0.25.8
 
 packages:
 
@@ -496,6 +501,18 @@ packages:
       vitefu: 0.2.5(vite@4.5.1)
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@tailwindcss/typography@0.5.10(tailwindcss@3.4.0):
+    resolution: {integrity: sha512-Pe8BuPJQJd3FfRnm6H0ulKIGoMEQS+Vq01R6M5aCrFB/ccR/shT+0kXLjouGC1gFLm9hopTFN+DMP0pfwRWzPw==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders'
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      postcss-selector-parser: 6.0.10
+      tailwindcss: 3.4.0
     dev: true
 
   /@types/chai-subset@1.3.5:
@@ -1510,6 +1527,14 @@ packages:
       p-locate: 5.0.0
     dev: true
 
+  /lodash.castarray@4.4.0:
+    resolution: {integrity: sha512-aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q==}
+    dev: true
+
+  /lodash.isplainobject@4.0.6:
+    resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
+    dev: true
+
   /lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
@@ -1808,6 +1833,14 @@ packages:
     dependencies:
       postcss: 8.4.32
       postcss-selector-parser: 6.0.14
+    dev: true
+
+  /postcss-selector-parser@6.0.10:
+    resolution: {integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==}
+    engines: {node: '>=4'}
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
     dev: true
 
   /postcss-selector-parser@6.0.14:

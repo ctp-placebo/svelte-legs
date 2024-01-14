@@ -1,42 +1,68 @@
 <script>
 	import { onMount } from "svelte";
     import { themeChange } from 'theme-change'
-    import tailwindConfig from '../../../tailwind.config.cjs';
+    import tailwindConfig from '../../../tailwind.config.js';
 
-    let themes = Object.keys(tailwindConfig.daisyui.themes);
-    console.log(themes);
+    // YSK: the theme switcher is using localstorage. 
+
+    let themes = Object.values(tailwindConfig.daisyui.themes);
 
     onMount(() => {
         themeChange(false);
+        localStorage.getItem('legs theme');
     });
 </script>
 
-<div class="header">
-    <select data-choose-theme>
-        <option value="">Default</option>
-        {#each themes as theme}
-            <option value={theme}>{theme}</option>
-        {/each}
-    </select>
-    <h1>Telle bene mine!</h1>
-    <p class="logo">__🐄_</p>
-</div>
+<header class="bg-base-100">
+    <div class="header-inner-wrapper">
+        <div class="prose">
+            <h1>Telle bene mine!</h1>
+        </div>
+            <select 
+                data-choose-theme 
+                tab-index="0" 
+                class="select select-bordered max-w-xs"
+                > 
+                <option disabled selected>Velg thema</option>
+                {#each themes.sort((a, b) => {
+                    if (a === 'light' || a === 'dark') return -1;
+                    if (b === 'light' || b === 'dark') return 1;
+                    return a.localeCompare(b);
+                }) as theme}
+                    <option 
+                        value={theme}
+                        class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                        >
+                        {theme.charAt(0).toUpperCase() + theme.slice(1)}
+                    </option>
+                {/each}
+            </select>
+        </div>
+    <!-- <p class="logo">__🐄_</p> -->
+    <div class="divider divider-accent"></div> 
+</header>
 
 <style>
-    .header {
-        height: 8rem;
-        background-color: var(--carnation-pink);
-        display: flex;
-        flex-direction: column;
+    header {
+        min-height: 80px;
+        /* border-bottom: 1px solid #50C878; */
+    }
+    .header-inner-wrapper {
+        width: 100vw;
+        min-height: 5vh;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
-   
     }
-    h1 {
-        color: var(--black-olive);
-        text-shadow: 1px 1px 4px var(--snow);
-        margin-bottom: 0;
+    .header-inner-wrapper div {
+        padding: 1rem;
     }
-    .logo {
+    .header-inner-wrapper select {
+        margin-right: 1rem;
+    }
+ 
+    /* .logo {
         color: #50C878;
         color: var(--light-green);
         font-size: 46px;
@@ -45,5 +71,5 @@
         border-radius: 15px 15px 0px 0px;
         align-self: center ;
         margin: 26px 0 0 0;
-    }
+    } */
 </style>

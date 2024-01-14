@@ -36,6 +36,10 @@
 		display: flex;
 		flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
+		margin-top: 3dvh;
+		margin-bottom: 3dvh;
+		row-gap: 1rem;
+		column-gap: 1.25rem;
 	}
 </style>
