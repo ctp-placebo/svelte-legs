@@ -16,7 +16,7 @@
 <header class="bg-base-100">
     <div class="header-inner-wrapper">
         <div class="prose">
-            <h1>Telle bene mine!</h1>
+            <h1>Telle bene mine! <span style="font-size: 2em; border-bottom: 5px solid green;">🐄</span></h1>
         </div>
             <select 
                 data-choose-theme 
@@ -44,12 +44,13 @@
 
 <style>
     header {
-        min-height: 80px;
+        /* min-height: 80px; */
+        min-height: 3dvh;
         /* border-bottom: 1px solid #50C878; */
     }
     .header-inner-wrapper {
         width: 100vw;
-        min-height: 5vh;
+        min-height: 3vh;
         display: inline-flex;
         flex-wrap: wrap;
         justify-content: space-between;

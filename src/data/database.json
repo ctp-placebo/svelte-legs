@@ -111,7 +111,7 @@
         },
         {
             "id": 11,
-            "name": "vei arbeid",
+            "name": "veiarbeider",
             "namePlural": "veiarbeider",
             "numberLegs": 2,
             "voice": "pathToAudio",
