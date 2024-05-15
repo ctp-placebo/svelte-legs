@@ -4,13 +4,13 @@
     import { totalCount } from '../stores/countStore';
     
     const jsonData = [...data];
+    // totalCountValue is your total score in the circle.
     /**
 	* @type {number}
 	*/
-    
     let totalCountVal;
     totalCount.subscribe(value => {
-        if (value === 0) {
+        if (value === 0 ) {
             totalCount.set(0);
         }
         totalCountVal = value;
@@ -28,8 +28,7 @@
     </div>
     <section class="signlist-wrapper">
         <SignList signData={jsonData} />
-    </section>    
-    
+    </section>
 </article>
 
 

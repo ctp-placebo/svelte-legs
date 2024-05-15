@@ -5,7 +5,7 @@ import { searchForWorkspaceRoot } from 'vite'
 export default defineConfig({
 	plugins: [sveltekit()],
 	test: {
-		include: ['src/**/*.{test,spec}.{js,ts}']
+		include: ['src/**/*.{test,spec}.{js, svelte}']
 	},
 	server: {
 		fs: {
@@ -19,6 +19,7 @@ export default defineConfig({
 	},
 });
 
-// YTF we need dis server paragraff? to get daisyUi themes from the tailwind.config.js
+// Q: YTF we need dis server paragraff? 
+// A: to get daisyUi themes fae the tailwind.config.js wot
 // wir usin' in the theme switcher in the header.
 // Aye fureal

@@ -1,14 +1,12 @@
 <script>
     /**
-	 * @type {any}
+	 * @property {number} onAdd
+     * @property {number} onSubtract
 	 */
      export let onAdd;
-    /**
-	 * @type {any}
-	 */
      export let onSubtract;
 
-</script>
+</script>   
 
 <div class="plus-minus-btns">
     <button 
