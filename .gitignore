@@ -8,7 +8,6 @@ node_modules
 !.env.example
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-TO-DO.txt
 /test-results/
 /playwright-report/
 /blob-report/

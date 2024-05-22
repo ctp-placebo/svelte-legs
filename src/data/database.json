@@ -45,8 +45,8 @@
         },
         {
             "id": 5,
-            "name": "gang vei",
-            "namePlural": "gang vei",
+            "name": "fotgjengerfelt",
+            "namePlural": "fotgjengerfelt",
             "numberLegs": 2,
             "voice": "pathToAudio",
             "voiceText": "hello",
@@ -89,8 +89,8 @@
         },
         {
             "id": 9,
-            "name": "skiier",
-            "namePlural": "skiier",
+            "name": "skiløper",
+            "namePlural": "skiløpere",
             "numberLegs": 2,
             "voice": "pathToAudio.wav",
             "voiceText": "human",

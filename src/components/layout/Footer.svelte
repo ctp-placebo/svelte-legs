@@ -37,7 +37,7 @@
 		<div class="modal" class:modal-open={isModalOpen}>
 			<div class="modal-box">
 				<h1 class="font-bold text-4xl">😧</h1>
-				<p class="py-4 text-primary-content">Hvil du ha alle skilt tilbake på 0? <br>
+				<p class="py-4 text-primary-content">Vil du ha alle skilt tilbake til 0? <br>
 				Det er å starte spillet på nytt!
 				</p>
 

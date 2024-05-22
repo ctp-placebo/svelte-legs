@@ -1,0 +1,22 @@
+To-Do List - !=priority (It's a primitive Kanban board :/ )
+
+ ! [ ] Add animation (to buttons and to score f.eks.)
+ ! [ ] Add tests (fix playwright)
+ ! [ ] Add more signs -all signs - best done when data is in DB and json.
+ ! [ ] Save game to localstorage [] - add more PWA []
+   [ ] ? Move the total score to a sticky header ? it would be always visible while scrolling to add from a sign.
+ - [ ] Add multiple players
+ - [ ] Add new game and continue game. New game = reset. Continue = get from localstorage
+ - [ ] Add Java BE with: user accounts[], save game history[], 
+ - [ ] Tidy CSS & HTML that has been replaced with Tailwind/Daisy classes. 
+ - [ ] Remove some themes that are less pretty, set default to one that is. 
+ - [ ] Make is so the user has to do the maths to see the score. 
+ - [ ] Add sound ?  
+ - [ ] Add a "how to play" page / modal. with a warning about 
+ - [ ] 
+ - [ ]
+ - [ ]
+ - [ ]
+ ! [x] Add reset total with "are you sure" warning and OK/CANCEL 
+ ! [x] No negative values> reset all sign counters on score reset. [X] Use a Store for add. sub, reset.
+ - [x] Add footer from DaisyUI [x] - remove own footer[x]
