@@ -16,7 +16,7 @@
 <header class="bg-base-100">
     <div class="header-inner-wrapper">
         <div class="prose">
-            <h1>Telle bene mine! <span style="font-size: 2em; border-bottom: 5px solid green;">🐄</span></h1>
+            <h1>Tell mine ben! <span style="font-size: 2em; border-bottom: 5px solid green;">🐄</span></h1>
         </div>
             <select 
                 data-choose-theme 

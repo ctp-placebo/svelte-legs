@@ -2,8 +2,12 @@
     import data from '../data/database.json';
     import SignList from '../components/SignList.svelte';
     import { totalCount } from '../stores/countStore';
-    
+
+    import { blur } from 'svelte/transition';
+    import { cubicIn, cubicOut } from 'svelte/easing';
+
     const jsonData = [...data];
+
     // totalCountValue is your total score in the circle.
     /**
 	* @type {number}
@@ -23,7 +27,15 @@
 <article>
     <div class="section-wrapper">
         <section class="total-legs">
-            <span>{totalCountVal}</span>
+            {#key totalCountVal}
+                <span 
+                    out:blur={{ delay: 0, duration: 100,  easing: cubicIn, opacity: 0, amount: "2rem" }}
+                    in:blur={{ delay: 0, duration: 800,  easing: cubicIn, amount: "1rem" }}
+                >
+                    {totalCountVal}
+                </span>  
+
+            {/key}
         </section>
     </div>
     <section class="signlist-wrapper">
